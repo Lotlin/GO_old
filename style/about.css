@@ -1,0 +1,61 @@
+.about {
+  padding: 50px 0;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 45px;
+}
+
+.about__quote-wrapper {
+  margin-bottom: 40px;
+}
+
+.about__quote {
+  position: relative;
+  display: block;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+  padding-left: 56px;
+}
+
+.about__quote-top::before {
+  display: inline-block;
+  position: absolute;
+  background: url("../img/icons/quotesLeft.svg") no-repeat;
+  content: " ";
+  height: 35px;
+  width: 40px;
+  left: 0;
+}
+
+.about__quote-bottom::after {
+  display: inline-block;
+  position: absolute;
+  background: url("../img/icons/quotesRight.svg") no-repeat;
+  content: " ";
+  height: 35px;
+  width: 40px;
+  left: 1050px;
+}
+
+.about__cite {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 790px;
+  max-width: 1140px;
+}
+
+.about__cite-text {
+  max-width: 234px;
+}

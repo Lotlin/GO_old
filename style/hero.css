@@ -1,0 +1,20 @@
+.hero {
+  padding-top: 126px;
+  margin-bottom: 60px;
+  min-height: 950px;
+  background: url("../img/banner.png") no-repeat 500px 192px;
+}
+
+.hero__title {
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing: -0.1em;
+  line-height: 150px;
+}
+
+.hero__description {
+  padding-left: 92px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 50px;
+}
