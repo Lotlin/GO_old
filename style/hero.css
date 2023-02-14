@@ -1,8 +1,19 @@
 .hero {
-  padding-top: 126px;
-  margin-bottom: 60px;
-  min-height: 950px;
-  background: url("../img/banner.png") no-repeat 500px 192px;
+  position: relative;
+  padding-top: 146px;
+  padding-bottom: 50px;
+  min-height: 1020px;
+}
+
+.hero::after {
+  position: absolute;
+  display: inline-block;
+  left: 500px;
+  top: 212px;
+  background: url("../img/banner.png") no-repeat;
+  content: "";
+  height: 756px ;
+  width: 675px;
 }
 
 .hero__title {
