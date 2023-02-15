@@ -1,0 +1,37 @@
+.review {
+  padding: 50px 0;
+}
+
+.review__title {
+  margin-bottom: 60px;
+}
+
+.review__item {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  max-width: 1080px;
+}
+
+.review__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.review__user-name {
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+
+}
+
+.review__user-img {
+  margin-bottom: 10px;
+  min-height: 280px;
+}
+
+.review__text {
+  padding-top: 50px;
+  max-width: 680px;
+  font-size: 20px;
+  line-height: 28px;
+}

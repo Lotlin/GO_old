@@ -6,39 +6,48 @@
   margin-bottom: 60px;
 }
 
-.hall__item {
-  position: relative;
-  height: 710px;
+.hall__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 718px;
 }
 
-.hall__item:not(:last-child) {
-  margin-bottom: 60px;
+.hall__item {
+  position: relative;
+  width: 580px;
+  min-height: 349px;
 }
 
 .hall__item-vibes {
-  background: url("../img/vibes.jpg");
+  background: url("../img/vibes.jpg") no-repeat;
+  background-size: contain;
 }
 
 .hall__item-star {
-  background: url("../img/starWars.jpg");
+  background: url("../img/starWars.jpg") no-repeat;
+  background-size: contain;
 }
 
 .hall__item-west {
-  background: url("../img/wildWest.jpg");
+  background: url("../img/wildWest.jpg") no-repeat;
+  background-size: contain;
 }
 
 .hall__item-neon {
-  background: url("../img/neonStyle.jpg");
+  background: url("../img/neonStyle.jpg") no-repeat;
+  background-size: contain;
 }
 
 .hall__link {
   position: absolute;
-  width: 211px;
-  left: 480px;
-  top: 275px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
-  text-align: center;
   text-transform: uppercase;
 }
