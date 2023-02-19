@@ -1,9 +1,11 @@
 @import "normolize.css";
 @import "global.css";
+@import "header.css";
 @import "hero.css";
+@import "advertising.css";
 @import "hall.css";
 @import "booking.css";
 @import "about.css";
 @import "review.css";
 @import "faq.css";
-@import "contact.css";
+@import "footer.css";
