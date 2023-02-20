@@ -74,6 +74,20 @@
   width: 280px;
 }
 
+.contact__social-link:hover {
+  color: #eadeed;
+}
+
+.contact__social-link:focus {
+  color: #eadeed;
+  outline: 1px solid #cd06ff;
+}
+
+.contact__social-link:active {
+  color: #cd06ff;
+  outline: none;
+}
+
 .contact__map {
   flex-basis: 680px;
   min-height: 274px;

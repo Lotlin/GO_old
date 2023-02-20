@@ -26,3 +26,15 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.header__button:hover,
+.header__button:focus {
+  background-color: #6c0287;
+  border: 3px solid #6c0287;
+  outline: none;
+}
+
+.header__button:active {
+  background-color: #640aa3;
+  border: 3px solid #000000;
+}

@@ -14,10 +14,44 @@
   top: 60px;
 }
 
-.hero__container::after {
+.hero__down::after {
   position: absolute;
   display: inline-block;
   background: url("../img/icons/down.svg");
+  content: "";
+  width: 97px;
+  height: 97px;
+  left: 540px;
+  top: 670px;
+}
+
+.hero__down:hover::after {
+  position: absolute;
+  display: inline-block;
+  background: url("../img/icons/downHover.svg");
+  content: "";
+  width: 97px;
+  height: 97px;
+  left: 540px;
+  top: 670px;
+}
+
+.hero__down:focus::after {
+  position: absolute;
+  display: inline-block;
+  background: url("../img/icons/down.svg");
+  outline: 1px solid #cd06ff;
+  content: "";
+  width: 97px;
+  height: 97px;
+  left: 540px;
+  top: 670px;
+}
+
+.hero__down:active::after {
+  position: absolute;
+  display: inline-block;
+  background: url("../img/icons/downActive.svg");
   content: "";
   width: 97px;
   height: 97px;
@@ -83,4 +117,14 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.hero__booking:hover,
+.hero__booking:focus {
+  background-color: #840AA3;
+  outline: none;
+}
+
+.hero__booking:active {
+  background-color: #640AA3;
 }

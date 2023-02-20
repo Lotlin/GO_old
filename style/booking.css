@@ -38,6 +38,7 @@
   display: block;
   width: 250px;
   padding: 7px 15px 8px;
+  border: 3px solid transparent;
   border-radius: 8px;
   background-color: #ffffff;
   color: #000000;
@@ -46,6 +47,22 @@
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.booking__hall-label:hover {
+  background-color: #eadeed;
+  border: 3px solid #640aa3;
+}
+
+.booking__hall-label:focus {
+  border: 3px solid #640aa3;
+  outline: none;
+}
+
+.booking__hall-label:active {
+  background-color: #6c0287;
+  border: 3px solid #ffffff;
+  color: #ffffff;
 }
 
 .radio-input,
@@ -70,9 +87,14 @@
   row-gap: 20px;
   font-size: 22px;
 }
+
 .booking__entertainment-radio-label {
   position: relative;
   padding-left: 32px;
+}
+
+.booking__entertainment-radio-label:focus {
+  outline: none;
 }
 
 .booking__entertainment-radio::before {
@@ -86,11 +108,34 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  outline: 1px solid transparent;
+}
+
+.booking__entertainment-radio:focus::before {
+  /*
+  outline: 1px solid #cd06ff;
+  outline-offset: 2px;
+   */
+  position: absolute;
+  display: block;
+  width: 46px;
+  height: 46px;
+  content: "";
+  left: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: 1px solid transparent;
+  background: url("../img/icons/radioFocus.svg") no-repeat center;
+
 }
 
 .booking__entertainment-checkbox-label {
   position: relative;
   padding-left: 32px;
+}
+
+.booking__entertainment-checkbox-label:focus {
+  outline: none;
 }
 
 .booking__entertainment-checkbox::before {
@@ -103,6 +148,20 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.booking__entertainment-checkbox:focus::before {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  content: "";
+  background-color: #ffffff;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: 1px solid #cd06ff;
+  outline-offset: 2px;
 }
 
 .booking__entertainment-add {
@@ -133,8 +192,14 @@
 .booking__date-group1-label {
   position: relative;
   background-color: #ffffff;
+  border: 2px solid transparent;
   width: 134px;
   height: 52px;
+}
+
+.booking__date-group1-label:focus {
+  border: 2px solid #cd06ff;
+  outline: none;
 }
 
 .booking__date-group1-label-people {
@@ -186,6 +251,12 @@
 
 .booking__date-group2-label {
   position: relative;
+  border: 2px solid transparent;
+}
+
+.booking__date-group2-label:focus {
+  border: 2px solid #cd06ff;
+  outline: none;
 }
 
 .booking__date-group2-span {
@@ -201,6 +272,12 @@
 .booking__date-group2-input {
   width: 280px;
   height: 52px;
+  border: 2px solid transparent;
+}
+
+.booking__date-group2-input:focus {
+  border: 2px solid #cd06ff;
+  outline: none;
 }
 
 .booking__date-group3 {
@@ -216,18 +293,38 @@
   height: 52px;
 }
 
+.booking__date-group3-input:focus {
+  border: 2px solid #cd06ff;
+  outline: none;
+}
+
 .booking__button-wrapper {
   padding-left: 870px;
 }
 
 .booking__button {
   background-color: #ffffff;
-  border: none;
+  border: 3px solid transparent;
   border-radius: 10px;
   color: #6C0287;
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-  padding: 16px 50px;
+  padding: 13px 47px;
+}
+
+.booking__button:hover {
+  background-color: #eadeed;
+  border: 3px solid #6c0287;
+}
+
+.booking__button:focus {
+  border: 3px solid #6c0287;
+  outline: none;
+}
+
+.booking__button:active {
+  background-color: #eadeed;
+  border: 3px solid transparent;
 }
