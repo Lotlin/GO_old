@@ -1,0 +1,48 @@
+.advertising__h2 {
+  margin: auto auto 41px;
+  max-width: 700px;
+}
+
+.advertising__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.advertising__item {
+  position: relative;
+  flex-basis: 380px;
+  min-height: 228px;
+}
+
+.advertising__item--vr {
+  background: url("../img/vr.jpg") no-repeat;
+}
+
+.advertising__item--audio {
+  background: url("../img/audio.jpg") no-repeat;
+}
+
+.advertising__item--karaoke {
+  background: url("../img/micro.jpg") no-repeat;
+}
+
+.advertising__item--game {
+  background: url("../img/game.jpg") no-repeat;
+}
+
+.advertising__item--tv {
+  background: url("../img/netflix.jpg") no-repeat;
+}
+
+.advertising__item--playStation {
+  background: url("../img/sony.jpg") no-repeat;
+}
+
+.advertising__item-title {
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  max-width: 262px;
+}
