@@ -16,6 +16,20 @@
   min-height: 228px;
 }
 
+.advertising__item:hover {
+  animation: trans 1s forwards;
+}
+
+@keyframes trans {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.1);
+  }
+
+}
+
 .advertising__item--vr {
   background: url("../img/vr.jpg") no-repeat;
 }

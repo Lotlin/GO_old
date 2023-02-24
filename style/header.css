@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   column-gap: 40px;
-
   font-size: 22px;
   line-height: 50px;
   text-transform: uppercase;
@@ -20,11 +19,11 @@
   background-color: transparent;
   border: 3px solid #cd06ff;
   border-radius: 10px;
-
   color: #ffffff;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
+  transition: background-color 200ms ease-in-out, border 200ms linear;
 }
 
 .header__button:hover,

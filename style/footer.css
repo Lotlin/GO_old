@@ -74,6 +74,10 @@
   width: 280px;
 }
 
+.contact__social-link {
+  transition: color 200ms linear, outline 200ms linear;
+}
+
 .contact__social-link:hover {
   color: #eadeed;
 }

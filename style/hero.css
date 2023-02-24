@@ -23,12 +23,13 @@
   height: 97px;
   left: 540px;
   top: 670px;
+  transition: background-image 500ms linear, outline 200ms linear;
 }
 
 .hero__down:hover::after {
   position: absolute;
   display: inline-block;
-  background: url("../img/icons/downHover.svg");
+  background-image: url("../img/icons/downHover.svg");
   content: "";
   width: 97px;
   height: 97px;
@@ -39,7 +40,7 @@
 .hero__down:focus::after {
   position: absolute;
   display: inline-block;
-  background: url("../img/icons/down.svg");
+  background-image: url("../img/icons/down.svg");
   outline: 1px solid #cd06ff;
   content: "";
   width: 97px;
@@ -117,6 +118,8 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+
+  transition: background-color 200ms linear;
 }
 
 .hero__booking:hover,

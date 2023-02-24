@@ -34,28 +34,15 @@
     content: " ";
     height: 50px;
     width: 50px;
+    transition: background-image 500ms ease-in-out;
 }
 
 .faq__item:nth-child(odd):hover::after {
-    position: absolute;
-    display: inline-block;
-    left: 1030px;
-    top: 20px;
-    background: url("../img/icons/circlePurpleFiled.svg") no-repeat;
-    content: " ";
-    height: 50px;
-    width: 50px;
+    background-image: url("../img/icons/circlePurpleFiled.svg");
 }
 
 .faq__item:nth-child(odd):active::after {
-    position: absolute;
-    display: inline-block;
-    left: 1030px;
-    top: 20px;
-    background: url("../img/icons/circlePurpleMenus.svg") no-repeat;
-    content: " ";
-    height: 50px;
-    width: 50px;
+    background-image: url("../img/icons/circlePurpleMenus.svg");
 }
 
 .faq__item:nth-child(even)::after {
@@ -67,26 +54,13 @@
     content: " ";
     height: 50px;
     width: 50px;
+    transition: background-image 500ms ease-in-out;
 }
 
 .faq__item:nth-child(even):hover::after {
-    position: absolute;
-    display: inline-block;
-    left: 1030px;
-    top: 20px;
-    background: url("../img/icons/circleWhiteFilled.svg") no-repeat;
-    content: " ";
-    height: 50px;
-    width: 50px;
+    background-image: url("../img/icons/circleWhiteFilled.svg");
 }
 
 .faq__item:nth-child(even):active::after {
-    position: absolute;
-    display: inline-block;
-    left: 1030px;
-    top: 20px;
-    background: url("../img/icons/circleWhiteMenus.svg") no-repeat;
-    content: " ";
-    height: 50px;
-    width: 50px;
+    background-image: url("../img/icons/circleWhiteMenus.svg");
 }
