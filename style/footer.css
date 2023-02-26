@@ -1,6 +1,6 @@
 .footer {
   padding-bottom: 10px;
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background: var(--background, linear-gradient(180deg, #1B1A1B 0%, #370A37 100%));
 }
 
 .contact {

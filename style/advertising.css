@@ -8,6 +8,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px 20px;
+  margin-bottom: 70px;
 }
 
 .advertising__item {
@@ -16,18 +17,35 @@
   min-height: 228px;
 }
 
-.advertising__item:hover {
-  animation: trans 1s forwards;
-}
-
-@keyframes trans {
+@keyframes scale {
   from {
     transform: scale(1.0);
   }
   to {
     transform: scale(1.1);
   }
+}
 
+@keyframes translateScale {
+  from {
+    transform: translateY(70px) scale(1.0);
+  }
+  to {
+    transform: translateY(70px) scale(1.1);
+  }
+}
+
+.advertising__item:nth-child(3n + 2) {
+  transform: translateY(70px);
+
+}
+
+.advertising__item:nth-child(3n + 2):hover {
+  animation: translateScale 1s forwards;
+}
+
+.advertising__item:hover {
+  animation: scale 1s forwards;
 }
 
 .advertising__item--vr {

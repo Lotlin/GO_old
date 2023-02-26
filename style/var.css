@@ -1,0 +1,27 @@
+:root {
+  --backgroundColor: #1b1a1b;
+  --color: #ffffff;
+}
+
+.booking {
+  --backgroundColor: #440f51;
+}
+
+.booking .booking__hall-label {
+  --backgroundColor: #ffffff;
+  --color: #000000;
+}
+
+.faq .faq__item {
+  --backgroundColor: #ffffff;
+  --color: #1c1a1a;
+}
+
+.faq .faq__item:nth-child(even) {
+  --backgroundColor: #440F51;
+  --color: #ffffff;
+}
+
+.footer {
+  --background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
