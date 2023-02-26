@@ -1,19 +1,63 @@
-.hero {
+.hero__container {
   position: relative;
-  padding-top: 146px;
-  padding-bottom: 50px;
-  min-height: 1020px;
+  min-height: 823px;
 }
 
-.hero::after {
+.hero__container::before {
   position: absolute;
   display: inline-block;
-  left: 500px;
-  top: 212px;
   background: url("../img/banner.png") no-repeat;
   content: "";
-  height: 756px ;
+  height: 762px ;
   width: 675px;
+  left: 500px;
+  top: 60px;
+}
+
+.hero__down::after {
+  position: absolute;
+  display: inline-block;
+  background: url("../img/icons/down.svg");
+  content: "";
+  width: 97px;
+  height: 97px;
+  left: 540px;
+  top: 670px;
+  transition: background-image 500ms linear, outline 200ms linear;
+}
+
+.hero__down:hover::after {
+  position: absolute;
+  display: inline-block;
+  background-image: url("../img/icons/downHover.svg");
+  content: "";
+  width: 97px;
+  height: 97px;
+  left: 540px;
+  top: 670px;
+}
+
+.hero__down:focus::after {
+  position: absolute;
+  display: inline-block;
+  background-image: url("../img/icons/down.svg");
+  outline: 1px solid #cd06ff;
+  content: "";
+  width: 97px;
+  height: 97px;
+  left: 540px;
+  top: 670px;
+}
+
+.hero__down:active::after {
+  position: absolute;
+  display: inline-block;
+  background: url("../img/icons/downActive.svg");
+  content: "";
+  width: 97px;
+  height: 97px;
+  left: 540px;
+  top: 670px;
 }
 
 .hero__title {
@@ -24,8 +68,66 @@
 }
 
 .hero__description {
+  margin-bottom: 30px;
   padding-left: 92px;
   font-size: 28px;
   font-weight: 400;
   line-height: 50px;
+}
+
+.hero__text-wrapper {
+  margin-bottom: 150px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  text-align: center;
+}
+
+.hero__text-right {
+  padding-top: 30px;
+}
+
+.hero__text-important {
+  color: #cd06ff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero__text-important--number {
+  font-size: 100px;
+}
+
+.hero__text-important--new {
+  align-self: flex-end;
+  font-size: 75px;
+}
+
+.hero__text-common {
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.hero__booking {
+  padding: 25px 69px;
+  background-color: #6c0287;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #6C0287;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  transition: background-color 200ms linear;
+}
+
+.hero__booking:hover,
+.hero__booking:focus {
+  background-color: #840AA3;
+  outline: none;
+}
+
+.hero__booking:active {
+  background-color: #640AA3;
 }
